@@ -102,7 +102,13 @@
 			"name": "add article",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJiMWRkOTFhMTg5M2QyOGI5YWVmNDFlIiwiZW1haWwiOiJzYWNoaW4xLnBhdGlsMUBnbWFpc2wuY29tIiwiaWF0IjoxNjU1ODI3NTUzLCJleHAiOjE2NTU4MzQ3NTN9.4kMCLCNMz8XCiHNF2L3-ihreNiH0b-1OT0N7aPOsTKo",
+						"type": "default"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n    \"title\": \"test\",\r\n    \"slug\": \"slugtest\",\r\n    \"publishedAt\": \"2021-05-03\"\r\n}",
@@ -144,7 +150,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/articles/1",
+					"raw": "http://localhost:3001/articles/62b1ef3eaf1aaa3f6df48519",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -152,7 +158,7 @@
 					"port": "3001",
 					"path": [
 						"articles",
-						"1"
+						"62b1ef3eaf1aaa3f6df48519"
 					]
 				}
 			},
@@ -165,7 +171,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJiMWRkOTFhMTg5M2QyOGI5YWVmNDFlIiwiZW1haWwiOiJzYWNoaW4xLnBhdGlsMUBnbWFpc2wuY29tIiwiaWF0IjoxNjU1ODI3NTUzLCJleHAiOjE2NTU4MzQ3NTN9.4kMCLCNMz8XCiHNF2L3-ihreNiH0b-1OT0N7aPOsTKo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJiMWRkOTFhMTg5M2QyOGI5YWVmNDFlIiwiZW1haWwiOiJzYWNoaW4xLnBhdGlsMUBnbWFpc2wuY29tIiwiaWF0IjoxNjU1ODI3NTUzLCJleHAiOjE2NTU4MzQ3NTN9.4kMCLCNMz8XCiHNF2L3-ihreNiH0b-1OT0N7aPOsTKo",
 						"type": "default"
 					}
 				],
@@ -179,7 +185,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3001/articles/1",
+					"raw": "http://localhost:3001/articles/62b1ef3eaf1aaa3f6df48519",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -187,7 +193,7 @@
 					"port": "3001",
 					"path": [
 						"articles",
-						"1"
+						"62b1ef3eaf1aaa3f6df48519"
 					]
 				}
 			},
