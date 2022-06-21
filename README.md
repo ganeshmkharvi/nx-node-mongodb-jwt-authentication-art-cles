@@ -1,6 +1,107 @@
 
 
-# NodeMongodbJwtAuthenticationArtCles
+<p align="center">
+  <h3 align="center">Authentication API with JWT Token in Node.js and mongoDB </h3>
+  <p align="center">
+    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-articles">Report Bug</a>
+    ·
+    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-articles"> Request Feature</a>
+  </p>
+</p>
+
+<!-- ABOUT THE PROJECT -->
+
+### What's inside this repo?
+
+- Express Server configured to accept JSON request.
+- Apis for register (register new user), login (login for existing user) and welcome (requires jwt token).
+- Production standard structuring of the application.
+- High SoC (feature based).
+- Postman collection.
+
+#### Task description
+
+We'll build an app where users can create and fetch articles.
+We will use Nx to create the app since we're using it. It will create a monorepo which you won't need here, but you'll get TypeScript, ESLint and Prettier config without
+much hassle.
+
+Models used within the app
+Article:
+id - unique string id, try to use UUIDs here
+title - article title
+slug - article slug
+published_at - date or null (if not yet published)
+User:
+id - unique string id, UUID
+username - must be unique
+password
+
+Tasks
+1. Add create, remove & getArticle endpoint
+2. Add published articles endpoint (GET /api/articles/published) which retrieves all articles that are published. Take into account that some articles might have
+published date in the future - we don't want to see these here. Support sorting and pagination.
+3. Add user create endpoint
+4. Implement JWT authentication without using express-jwt library.
+Provide "POST /login" endpoint accepting username & password in the JSON body
+Create JWT which expires in 1 hour
+5. You will get all the details in the postman collection inside this repo.
+
+### Built With
+
+- [Node.js]() - JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [Express.js]() - Minimal and flexible Node.js web application framework
+- [MongoDB]() - Cross-platform document-oriented database program
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps :
+
+### Prerequisites
+
+To run this project, you'll need to have the following installed:
+
+- Node.js : [https://nodejs.org](https://nodejs.org)
+
+- npm :
+  ```sh
+  npm install npm@latest -g
+  ```
+- MongoDB : [https://mongodb.com](https://mongodb.com) <br>
+
+> You can also use MongoDB Atlas if you prefer.
+> <br>
+
+### Installation
+
+1. Clone the repo :
+   ```sh
+   git clone https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-article.git
+   ```
+2. Install dependencies (use `sudo` if required) :
+
+   ```sh
+   npm install
+   ```
+
+3. Create `.env` file inside api folder and configure :
+
+   ```JS
+   PORT = <PORT>
+   MONGO_DB_URL = <MONGO_DB_URL> 
+   TOKEN_KEY =<TOKEN_KEY>
+   ```
+   E.g. MONGO_DB_URL = mongodb://localhost:27017/accountdb  
+   Here, accountdb is the database name.  
+   TOKEN_KEY=DFDF%#$%554GFVGVFXV  
+   Here, TOKEN_KEY can be set to any string that you want.
+
+4. Start the server :
+   ```sh
+   npm start
+   ```
+
 
 This project was generated using [Nx](https://nx.dev).
 
