@@ -3,9 +3,9 @@
 <p align="center">
   <h3 align="center">Authentication API with JWT Token in Node.js and mongoDB </h3>
   <p align="center">
-    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-article">Report Bug</a>
+    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-articles">Report Bug</a>
     ·
-    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-article"> Request Feature</a>
+    <a href="https://github.com/ganeshmkharvi/nx-node-mongodb-jwt-authentication-articles"> Request Feature</a>
   </p>
 </p>
 
