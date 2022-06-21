@@ -19,6 +19,32 @@
 - High SoC (feature based).
 - Postman collection.
 
+#### Task description
+
+We'll build an app where users can create and fetch articles.
+We will use Nx to create the app since we're using it. It will create a monorepo which you won't need here, but you'll get TypeScript, ESLint and Prettier config without
+much hassle.
+
+Models used within the app
+Article:
+id - unique string id, try to use UUIDs here
+title - article title
+slug - article slug
+published_at - date or null (if not yet published)
+User:
+id - unique string id, UUID
+username - must be unique
+password
+
+Tasks
+1. Add create, remove & getArticle endpoint
+2. Add published articles endpoint (GET /api/articles/published) which retrieves all articles that are published. Take into account that some articles might have
+published date in the future - we don't want to see these here. Support sorting and pagination.
+3. Add user create endpoint
+4. Implement JWT authentication without using express-jwt library.
+Provide "POST /login" endpoint accepting username & password in the JSON body
+Create JWT which expires in 1 hour
+5. You will get all the details in the postman collection inside this repo.
 
 ### Built With
 
@@ -59,7 +85,7 @@ To run this project, you'll need to have the following installed:
    npm install
    ```
 
-3. Create `.env` file and configure :
+3. Create `.env` file inside api folder and configure :
 
    ```JS
    PORT = <PORT>
