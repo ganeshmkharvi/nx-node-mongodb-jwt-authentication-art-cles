@@ -99,7 +99,8 @@ To run this project, you'll need to have the following installed:
 
 4. Start the server :
    ```sh
-   npm start
+   npm start (for running UI)
+   npx nx serve api (for running API)
    ```
 
 
