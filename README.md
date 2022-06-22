@@ -84,20 +84,23 @@ To run this project, you'll need to have the following installed:
    ```sh
    npm install
    ```
-
-3. Create `.env` file inside api folder and configure :
+3. Install Nx CLI globally
+ ```sh
+   npm install -g nx
+   ```
+4. Create `.env` file inside api folder and configure :
 
    ```JS
    PORT = <PORT>
    MONGO_DB_URL = <MONGO_DB_URL> 
    TOKEN_KEY =<TOKEN_KEY>
    ```
-   E.g. MONGO_DB_URL = mongodb://localhost:27017/accountdb  
-   Here, accountdb is the database name.  
+   E.g. MONGO_DB_URL = mongodb://localhost:27017/articledb  
+   Here, articledb is the database name.  
    TOKEN_KEY=DFDF%#$%554GFVGVFXV  
    Here, TOKEN_KEY can be set to any string that you want.
 
-4. Start the server :
+5. Start the server :
    ```sh
    npm start (for running UI)
    npx nx serve api (for running API)
